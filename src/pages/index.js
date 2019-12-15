@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql,Link } from "gatsby";
+import { graphql, Link } from "gatsby";
 import "../css/base.css";
 import Title from "../components/Title";
 import Img from "gatsby-image";
@@ -16,7 +16,7 @@ export const pageQuery = graphql`
     file(name: { eq: "picture-1" }) {
       publicURL
       childImageSharp {
-        fluid(maxWidth: 400, quality: 97) {
+        fluid(maxWidth: 300, quality: 97) {
           ...GatsbyImageSharpFluid
         }
       }
